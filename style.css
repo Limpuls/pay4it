@@ -1,0 +1,180 @@
+/* Grid System setup */
+.flex-grid {
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  /*margin-right: -1rem;
+  margin-left: -1rem;*/
+  flex: 0 0 auto;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+/* Column setup */
+
+.col,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  margin: 1% 0 1% 1.6%;
+  position: relative;
+}
+
+.col:first-child {
+  margin-left: 0;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-11 {
+  	width: 91.53%;
+}
+.col-10 {
+  	width: 83.06%;
+}
+
+.col-9 {
+  	width: 74.6%;
+}
+
+.col-8 {
+  	width: 66.13%;
+}
+
+.col-7 {
+  	width: 57.66%;
+}
+
+.col-6 {
+  	width: 49.2%;
+}
+
+.col-5 {
+  	width: 40.73%;
+}
+
+.col-4 {
+  	width: 32.26%;
+}
+
+.col-3 {
+  	width: 23.8%;
+}
+
+.col-2 {
+  	width: 15.33%;
+}
+
+.col-1 {
+  	width: 6.866%;
+}
+
+/* Styling */
+
+.col {
+  background: pink;
+  padding: 5px;
+}
+
+.row {
+  background: blue;
+}
+
+/* Navigation */
+
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 20px;
+}
+
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+
+img {
+  position: absolute;
+  max-width: 100%;
+  display: inline-block;
+  left: 0;
+  right: 0
+}
+
+section {
+  width: 100%;
+  height: 400px;
+}
+
+.img_container {
+  width: 100%;
+  height: 400px;
+  background: orange;
+  background-image: url(images/laundry_hero_image.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  filter: brightness(80%);
+}
+
+h1 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans', sans-serif;
+  text-align: center;
+  padding-top: 180px;
+  top: -400px;
+  position: relative;
+  z-index: 1;
+  font-size: 40px;
+}
+
+.cta_button {
+  position: relative;
+  top: -350px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+
+}
+
+.cta_button p {
+  border: 1px solid white;
+  display: inline;
+  padding: 10px 15px 10px 15px;
+}
+
+.cta_button  a {
+  text-decoration: none;
+  color: white;
+}
