@@ -1,3 +1,9 @@
+/* Resets */
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /* Grid System setup */
 .flex-grid {
   margin-right: auto;
@@ -8,13 +14,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: auto;
-  /*margin-right: -1rem;
-  margin-left: -1rem;*/
   flex: 0 0 auto;
-  margin-bottom: 10px;
   position: relative;
 }
 
+.background_row {
+  background: #eee;
+}
 
 /* Column setup */
 
@@ -33,12 +39,20 @@
 .col-12 {
   box-sizing: border-box;
   flex: 0 0 auto;
-  margin: 1% 0 1% 1.6%;
+  margin: 1% 0 0.3% 1.6%;
   position: relative;
 }
 
 .col:first-child {
   margin-left: 0;
+}
+
+.col:last-of-type {
+  margin-bottom: 0;
+}
+
+.row:last-child {
+  margin-bottom: 0;
 }
 
 .col-12 {
@@ -91,12 +105,12 @@
 /* Styling */
 
 .col {
-  background: pink;
-  padding: 5px;
+  /*background: pink;*/
+  /*border: 1px solid black;*/
 }
 
 .row {
-  background: blue;
+  /*background: blue;*/
 }
 
 /* Navigation */
@@ -113,6 +127,26 @@ ul li {
   margin-right: 20px;
 }
 
+ul li  {
+  color: #444;
+  font-family: lato;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #444;
+}
+
+.arrow {
+  float: left;
+  padding-left: 16px;
+}
+
+.logo {
+  float: left;
+  margin-left: 40px;
+}
+/*Hero image section*/
 
 p {
   margin-top: 0;
@@ -123,7 +157,7 @@ p {
 }
 
 
-img {
+.hero_image img {
   position: absolute;
   max-width: 100%;
   display: inline-block;
@@ -131,7 +165,7 @@ img {
   right: 0
 }
 
-section {
+.hero_image {
   width: 100%;
   height: 400px;
 }
@@ -177,4 +211,228 @@ h1 {
 .cta_button  a {
   text-decoration: none;
   color: white;
+}
+
+/*Video section*/
+
+.video {
+  height: 400px;
+  width: 100%;
+  /*background: #eee;*/
+  border: 2px solid black;
+}
+
+h3 {
+  font-family: 'Fira Sans', sans-serif;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+p {
+  font-family: lato;
+
+}
+
+.left_area p {
+  /*position: relative;*/
+  left: 34%;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.button {
+  background: #f49b42;
+  width: 150px;
+  padding: 12px 0;
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.button p {
+  color: white;
+  font-family: lato;
+  font-weight: 400;
+}
+
+.background_row {
+  padding: 50px 0px;
+}
+
+video {
+  position: relative;
+  left: 25%;
+  margin-bottom: 16px;
+}
+
+.partners img {
+  float: left;
+}
+
+.about_partners {
+  margin: 50px 0px;
+  padding: 0 20px;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  background: #123645;
+  height: 150px;
+}
+
+
+footer p {
+  text-align: left;
+  color: white;
+  font-family: lato;
+  padding-top: 60px;
+  padding-left: 50px;
+}
+
+footer ul li a {
+  color: white;
+  position: relative;
+  bottom: 15px;
+
+}
+
+footer ul {
+  padding-right: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contacts {
+  color: #888;
+  padding-top: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.expand {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background: #eee;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 2;
+  left: 60px;
+  top: 20px;
+}
+
+.expand ul li {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+.expand ul {
+  text-align: center;
+}
+
+.expand li:hover {
+  background: #aaa;
+}
+
+/* Mobile styles */
+
+@media screen and (max-width: 480px) {
+  .col,
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 [class*="col"] {
+    display: block;
+    width: 100% !important;
+    float: none;
+    margin: 0;
+  }
+* {
+  float: none !important;
+}
+
+.logo {
+  margin: 4% 0;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.arrow {
+  display: none;
+}
+
+.partners img {
+  position: relative;
+  left: 40%;
+}
+
+.partners p {
+  padding: 10px 0px;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+  position: static !important;
+}
+
+.left_area {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+nav {
+  display: none;
+}
+
+.hamburger {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  z-index: 5;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  padding-bottom: 5px;
+}
+
+
+
+}
+
+@media screen and (min-width: 451px) {
+  nav {
+    display: inline;
+  }
+
+  .hamburger {
+    display: none;
+  }
 }
