@@ -286,7 +286,8 @@ video {
 footer {
   width: 100%;
   background: #123645;
-  height: 150px;
+  /*height: 150px;*/
+  height: auto;
 }
 
 
@@ -423,16 +424,56 @@ nav ul li {
   padding-bottom: 5px;
 }
 
+footer p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px !important;
+  padding-bottom: 10px;
+}
 
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 !important;
+    margin: 16px 0 0 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-right: 0;
+}
+
+.contacts {
+  padding-bottom: 30px;
+}
 
 }
 
 @media screen and (min-width: 451px) {
   nav {
-    display: inline;
+    display: block !important;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
   }
 
+  ul li {
+    list-style-type: none;
+    display: inline !important;
+    margin-right: 20px;
+  }
   .hamburger {
     display: none;
+  }
+
+  .expand ul li {
+    display: block !important;
   }
 }
