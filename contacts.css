@@ -1,0 +1,84 @@
+h2 {
+  font-family: "fira sans";
+  color: #529aaf;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+form input {
+  display: block;
+  margin: 0 auto;
+  margin-top: 16px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+input {
+  border-radius: 4px;
+  border: 0px;
+  height: 40px;
+  width: 350px;
+  box-shadow: 0px 0px 1px #444;
+}
+
+.submit {
+  background: orange;
+  box-shadow: 0px 0px 0px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.message_box {
+  padding-bottom: 90px;
+  padding-top: 20px;
+}
+
+img {
+  margin: 0 0 16px 16px;
+  filter: brightness(70%);
+  float: left;
+}
+
+img:hover {
+  filter: brightness(100%);
+  cursor: pointer;
+}
+
+p {
+  font-family: lato;
+}
+
+.working_hours {
+  margin-top: 20px;
+}
+
+.working {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+span p {
+  margin-bottom: 8px;
+}
+
+.contact_container {
+  margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 450px) {
+  .map {
+    display: block;
+    float: none !important;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

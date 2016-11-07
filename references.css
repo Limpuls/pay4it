@@ -6,6 +6,14 @@
 }
 */
 
+h2 {
+  font-family: "fira sans";
+  color: #529aaf;
+  position: relative;
+  /*left: 50px;*/
+  padding-left: 16px;
+}
+
 .profile_container {
   width: 50%;
   margin: 0 auto;
@@ -61,7 +69,7 @@
 }
 
 .chat_container > div {
-  background: #e9e9e9;
+  background: #e2e2e2;
   margin-right: 10px;
   margin-bottom: 10px;
 }
@@ -72,14 +80,62 @@ p:last-child {
 
 .partners_container {
   text-align: center;
+  overflow: hidden;
 }
 
 .partners_container img {
   margin-top: 24px
 }
 
+
+
 @media screen and (max-width: 450px) {
+
+  .references {
+    width: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  h2 {
+    text-align: center;
+    left: 0;
+  }
+
   .profile_container {
     display: block !important;
+    width: auto;
   }
+
+  .profile_container > div {
+    margin: 0;
+    padding: 0;
+  }
+
+  .chat_container {
+      display: block;
+      float: left !important;
+      /*padding: 0;
+      margin: 0;*/
+      width: auto;
+
+  }
+
+  .chat_container > div {
+    top: 0;
+    margin-top: 35px;
+    margin-bottom: 60px !important;
+    margin-right: 0 !important;
+  }
+
+ .profile_container {
+   float: left !important;
+   margin-top: 0;
+ }
+
+  .partners_container {
+    display: none;
+  }
+
 }
