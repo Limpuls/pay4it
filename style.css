@@ -115,9 +115,12 @@ body {
 
 /* Navigation */
 
+nav {
+
+}
+
 ul {
   margin: 0;
-  padding: 0;
   text-align: right;
 }
 
@@ -286,7 +289,8 @@ video {
 footer {
   width: 100%;
   background: #123645;
-  height: 150px;
+  /*height: 150px;*/
+  height: auto;
 }
 
 
@@ -374,6 +378,12 @@ a {
   float: none !important;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
   margin: 4% 0;
   text-align: left;
@@ -409,7 +419,7 @@ nav {
 }
 
 .hamburger {
-  position: absolute;
+  /*position: absolute;*/
   top: 8px;
   right: 16px;
   z-index: 5;
@@ -423,16 +433,122 @@ nav ul li {
   padding-bottom: 5px;
 }
 
+footer p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px !important;
+  padding-bottom: 10px;
+}
 
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 !important;
+    margin: 16px 0 0 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-right: 0;
+}
+
+.contacts {
+  padding-bottom: 30px;
+}
 
 }
 
-@media screen and (min-width: 451px) {
+@media screen and (min-width: 769px) {
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;;
+  }
+
   nav {
-    display: inline;
+    display: block !important;
+  }
+  ul {
+
+    text-align: right;
+  }
+
+  ul li {
+    list-style-type: none;
+    display: inline !important;
+    margin-right: 20px;
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .expand ul li {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col,
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 [class*="col"] {
+    display: block;
+    width: 100% !important;
+    float: none !important;
+    margin: 0;
+  }
+
+  .logo {
+    margin: 4% 0;
+    text-align: left;
+    padding-left: 16px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .hamburger {
-    display: none;
+    display: block;
+    z-index: 5;
+    max-width: 40px;
+    order: 2;
+    padding-right: 16px;
+  }
+
+  nav ul {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav ul li {
+    padding-bottom: 5px;
+  }
+
+  video {
+    display: block;
+    margin: 0 auto;
+    position: static;
   }
 }
